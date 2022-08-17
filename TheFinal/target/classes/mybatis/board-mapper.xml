@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="testboard">
+
+	<resultMap type="vetDto" id="boardMap">
+		<result property="id" column="ID"/>
+		<result property="name" column="NAME"/>
+	</resultMap>
+	<resultMap type="diagnosisDto" id="diagnosisDto"></resultMap>
+	<resultMap type="payHistoryDto" id="payHistoryDto"></resultMap>
+	<resultMap type="payMethodDto" id="payMethodDto"></resultMap>
+	<resultMap type="vBookDto" id="vBookDto"></resultMap>
+	<select id="test" resultMap="vetDto">
+		SELECT * FROM 테이블 
+	</select>
+
+</mapper>
